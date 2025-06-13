@@ -1,37 +1,31 @@
+<p align="center">
+  <img src="../priv/static/images/logo.svg" alt="NotionMind Logo" width="120" height="auto"/>
+  <br/>
+  <img src="https://github.com/mhamza-dev.png" alt="Hamza's GitHub Profile" width="64" height="64" style="border-radius:50%;margin-top:8px;"/>
+</p>
+
 # NotionMind Documentation
 
 Welcome to the NotionMind documentation! This guide will help you understand and use NotionMind effectively.
 
+---
+
+**Author:** [Muhammad Hamza](https://github.com/mhamza-dev)  
+_Product engineering | Helping others how to flutter 😃_
+
+---
+
 ## Table of Contents
 
 1. [Getting Started](getting-started.md)
-
-   - Installation
-   - Configuration
-   - Basic Usage
-
-2. [Features](features.md)
-
-   - Slack Integration
-   - GPT Analysis
-   - Ticket Creation
-
-3. [API Reference](api-reference.md)
-
-   - Endpoints
-   - Authentication
-   - Rate Limits
-
-4. [Guides](guides.md)
-
-   - Setting up Slack
-   - Configuring GPT
-   - Customizing Tickets
-
+2. [Features](advanced-features.md)
+3. [Best Practices](best-practices.md)
+4. [Notion Integration](notion-integration.md)
 5. [Troubleshooting](troubleshooting.md)
-   - Common Issues
-   - Error Messages
-   - Support
+
+---
+
+- For more, visit the [GitHub repository](https://github.com/mhamza-dev/notion_mind)
 
 ## Quick Start
 
@@ -46,4 +40,4 @@ We welcome contributions! Please see our [Contributing Guide](../CONTRIBUTING.md
 
 ## Support
 
-Need help? Check out our [Support Guide](support.md) or open an issue on GitHub.
+Need help? Check out our [Troubleshooting Guide](troubleshooting.md) or open an issue on GitHub.

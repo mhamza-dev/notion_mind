@@ -1,132 +1,73 @@
+<p align="center">
+  <img src="../priv/static/images/logo.svg" alt="NotionMind Logo" width="100" height="auto"/>
+  <br/>
+  <img src="https://github.com/mhamza-dev.png" alt="Hamza's GitHub Profile" width="48" height="48" style="border-radius:50%;margin-top:8px;"/>
+</p>
+
 # Getting Started with NotionMind
 
-Welcome to NotionMind! This guide will help you set up and start using NotionMind in your team's workflow.
+Welcome to NotionMind! This guide will help you set up and use the intelligent Slack-to-Notion ticketing bot.
+
+---
+
+**Author:** [Muhammad Hamza](https://github.com/mhamza-dev)
+
+---
 
 ## Prerequisites
 
-Before you begin, make sure you have:
-
-1. A Slack workspace where you have admin privileges
-2. A Notion account with API access
-3. An OpenAI API key
-4. Basic knowledge of command line operations
+- Elixir 1.14+
+- Erlang/OTP 25+
+- Node.js 18+
+- PostgreSQL 12+
+- OpenAI API key
+- Slack App credentials
+- Notion API key and database
 
 ## Installation
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/mhamza-dev/notion_mind.git
-cd notion_mind
-```
-
-### 2. Install Dependencies
-
-```bash
-# Install Elixir dependencies
-mix deps.get
-
-# Install Node.js dependencies
-cd assets && npm install && cd ..
-```
-
-### 3. Configure Environment Variables
-
-Copy the example environment file and update it with your credentials:
-
-```bash
-cp .env.example .env
-```
-
-Edit the `.env` file with your API keys and configuration:
-
-```env
-# GPT Configuration
-OPENAI_API_KEY=your_openai_api_key_here
-GPT_MODEL=gpt-4-turbo-preview
-
-# Notion Configuration
-NOTION_API_KEY=your_notion_api_key_here
-NOTION_DATABASE_ID=your_notion_database_id_here
-
-# Slack Configuration
-SLACK_CLIENT_ID=your_slack_client_id_here
-SLACK_CLIENT_SECRET=your_slack_client_secret_here
-SLACK_SIGNING_SECRET=your_slack_signing_secret_here
-SLACK_BOT_TOKEN=your_slack_bot_token_here
-```
-
-### 4. Set Up the Database
-
-```bash
-mix ecto.create
-mix ecto.migrate
-```
-
-### 5. Start the Server
-
-```bash
-mix phx.server
-```
-
-## Setting Up Notion
-
-1. Create a new Notion database with these properties:
-
-   - Name (title)
-   - Priority (select)
-   - Status (status)
-   - Labels (multi-select)
-
-2. Share the database with your Notion integration
-3. Copy the database ID from the URL
-4. Add the database ID to your `.env` file
-
-## Setting Up Slack
-
-1. Create a new Slack app at https://api.slack.com/apps
-2. Add the following bot token scopes:
-
-   - `app_mentions:read`
-   - `channels:history`
-   - `chat:write`
-   - `groups:history`
-
-3. Install the app to your workspace
-4. Copy the bot token and add it to your `.env` file
-
-## Using NotionMind
-
-### Basic Usage
-
-1. Invite the bot to a channel:
-
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mhamza-dev/notion_mind.git
+   cd notion_mind
    ```
-   /invite @NotionMind
+2. **Install dependencies:**
+   ```bash
+   mix deps.get
+   cd assets && npm install && cd ..
    ```
-
-2. Mention the bot in a conversation:
-
+3. **Set up environment variables:**
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your API keys
    ```
-   @NotionMind please create a ticket for this issue
+4. **Set up the database:**
+   ```bash
+   mix ecto.create
+   mix ecto.migrate
    ```
+5. **Start the Phoenix server:**
+   ```bash
+   mix phx.server
+   ```
+6. **Visit [`localhost:4000`](http://localhost:4000) in your browser.**
 
-3. The bot will:
-   - Analyze the conversation
-   - Create a structured ticket in Notion
-   - Post a confirmation message in Slack
+## Configuration
 
-### Ticket Format
+- **Notion:** Create a Notion database with properties: Name (title), Priority (select), Status (status), Labels (multi-select). Share it with your integration and add the database ID to `.env`.
+- **Slack:** Create a Slack app, add bot token scopes, install it to your workspace, and add credentials to `.env`.
+- **OpenAI:** Add your OpenAI API key and model to `.env`.
 
-Tickets created by NotionMind include:
+## Basic Usage
 
-- Title: A clear, concise description of the issue
-- Description: Detailed explanation of the problem
-- Steps to Reproduce: Numbered list of steps
-- Expected Behavior: What should happen
-- Actual Behavior: What actually happens
-- Priority: Set based on conversation context
-- Labels: Automatically generated from the conversation
+1. Invite the bot to your Slack workspace.
+2. Mention the bot in a conversation with `@NotionMind`.
+3. The bot will analyze the conversation and create a ticket in Notion.
+4. The ticket will include title, description, steps to reproduce, expected/actual behavior, priority, and labels.
+
+---
+
+For more details, see the [API Reference](api-reference.md), [Best Practices](best-practices.md), and [Troubleshooting](troubleshooting.md).
 
 ## Troubleshooting
 
