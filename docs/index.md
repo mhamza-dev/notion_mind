@@ -1,17 +1,16 @@
-<p align="center">
+<p align="left">
   <!-- <img src="../priv/static/images/logo.svg" alt="NotionMind Logo" width="120" height="auto"/>
   <br/> -->
-  <img src="https://github.com/mhamza-dev.png" alt="Hamza's GitHub Profile" width="100" height="100" style="border-radius:50%;margin-top:8px;"/>
+  <img src="https://github.com/mhamza-dev.png" alt="Hamza's GitHub Profile" width="100" height="100" style="border-radius:50%;margin-top:8px;vertical-align:middle;"/>
+  <span style="display:inline-block; vertical-align:middle; margin-left:16px; font-size:1.2em;">
+    <strong><a href="https://github.com/mhamza-dev" target="_blank">Muhammad Hamza</a></strong><br/>
+    <em>Building modern, scalable apps with <b>Elixir & Phoenix LiveView</b>, <b>MERN</b>, and <b>React Native</b>.<br/>Passionate about full stack engineering, real-time systems, and elegant user experiences.</em>
+  </span>
 </p>
 
 # NotionMind Documentation
 
 Welcome to the NotionMind documentation! This guide will help you understand and use NotionMind effectively.
-
----
-
-**Author:** [Muhammad Hamza](https://github.com/mhamza-dev)  
-_Building modern, scalable apps with **Elixir & Phoenix LiveView**, **MERN**, and **React Native**. Passionate about full stack engineering, real-time systems, and elegant user experiences._
 
 ---
 
