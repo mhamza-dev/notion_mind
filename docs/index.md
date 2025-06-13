@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="../priv/static/images/logo.svg" alt="NotionMind Logo" width="120" height="auto"/>
-  <br/>
-  <img src="https://github.com/mhamza-dev.png" alt="Hamza's GitHub Profile" width="64" height="64" style="border-radius:50%;margin-top:8px;"/>
+  <!-- <img src="../priv/static/images/logo.svg" alt="NotionMind Logo" width="120" height="auto"/>
+  <br/> -->
+  <img src="https://github.com/mhamza-dev.png" alt="Hamza's GitHub Profile" width="100" height="100" style="border-radius:50%;margin-top:8px;"/>
 </p>
 
 # NotionMind Documentation
@@ -11,7 +11,7 @@ Welcome to the NotionMind documentation! This guide will help you understand and
 ---
 
 **Author:** [Muhammad Hamza](https://github.com/mhamza-dev)  
-_Product engineering | Helping others how to flutter 😃_
+_Building modern, scalable apps with **Elixir & Phoenix LiveView**, **MERN**, and **React Native**. Passionate about full stack engineering, real-time systems, and elegant user experiences._
 
 ---
 
